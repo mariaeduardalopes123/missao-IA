@@ -47,6 +47,17 @@ const perguntas = [
           ],
           correta: 0 // A primeira alternativa é a correta
      }
-]
+];
+
+let atual = 0
+let perguntaAtual;
+let pontuação = 0;
+
+function mostrarPergunta() {
+     perguntaAtual = perguntas[atual];
+     caixaPerguntas.textContent = perguntaAtual.enunciado;
+     caixaAlternativas.innerHTML = "";
+     perguntaAtual.alternativas.forEach
+}
 
 
