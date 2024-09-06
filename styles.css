@@ -1,11 +1,11 @@
 /* DEFINIÇÃO DAS VARIÁVEIS CSS PARA CORES */
 :root{
-    --cor-fundo: #010d17
-    --cor-principal: #0b0d20
-    --cor-secundaria: #212333
-    --cor-destaque: #d1d1d1
-    --cor-texto: #fafafa
-    --cor-fadeButtom: #e30d6d
+    --cor-fundo: #010d17;
+    --cor-principal: #0b0d20;
+    --cor-secundaria: #212333;
+    --cor-destaque: #d1d1d1;
+    --cor-texto: #fafafa;
+    --cor-fadeButtom: #e30d6d;
 }
 /*CONFIGURAÇÃO DO ESTILO DO CORPO DA PAGINA*/
 body{
