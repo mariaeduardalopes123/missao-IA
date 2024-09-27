@@ -2,10 +2,11 @@ const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
-const caixaResultado = document.querySelector(".texto-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 // Array de objetos contendo as perguntas e alternativas
-const perguntas = [{
+const perguntas = [
+     {
      enunciado: "Qual é o oceano que divide o Brasil?"
      alternativas: [
           "oceano Atlântico",
@@ -78,6 +79,29 @@ function verificaResposta(Seleciona) {
      }
 
 }
+function mostrarResultado (){
+     caixaPrincipal.stayle.display = "none";
+     caixaResultado.style.display = "block";
+
+     setTimeout(() =>caixaResultado.classList.add("mostrar"), 10);
+     textoResultado.textContent = `Voce acertou ${pontuacao} de ${perguntas.length} perguntas`;
+     const botaoReiniciar = document.createElement("button");
+     botaoReiniciar.textContent = "Reiniciar";
+     botaoReiniciar.addEventListener("click", () => {
+          atual = 0;
+          pontuacao= 0;
+          caixaResultado.classList.remove("mostrar");
+          caixaResultado.style.display = "none";
+          caixaPrincipal.style.display = "block";
+          mostrarPergunta();
+    });
+
+    caixaResultado.innerHTML = "";
+    caixaResultado.appendChild(textoResultado);
+    caixaResultado.appendChild(botaoReiniciar);
+
+}
+mostrarPergunta();
 
 
 
