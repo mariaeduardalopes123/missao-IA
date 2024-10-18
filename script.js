@@ -5,48 +5,48 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-// Array de objeto contendo as perguntas e alternativas
+// Array de objetos contendo as perguntas e alternativas
 const perguntas = [
-    {
-        enunciado: "Qual a idade máxima que um cachorro pode chegar?",
-        alternativas: [
-            "15 anos",
-            "20 anos"
-        ],
-        correta: 0 // A primeira alternativa é a correta
-    },
-    {
-        enunciado: "Quantos dias há em um ano bissexto?",
-        alternativas: [
-            "365",
-            "366"
-        ],
-        correta: 1 // A segunda alternativa é a correta
-    },
-    {
-        enunciado: "Qual é o maior planeta do nosso sistema solar?",
-        alternativas: [
-            "Terra",
-            "Júpiter"
-        ],
-        correta: 1
-    },
-    {
-        enunciado: "Qual é a capital da França?",
-        alternativas: [
-            "Paris",
-            "Londres"
-        ],
-        correta: 0
-    },
-    {
-        enunciado: "Qual é a fórmula química da água?",
-        alternativas: [
-            "H2O",
-            "CO2"
-        ],
-        correta: 0
-    }
+     {
+          enunciado: "O que um oncologista pediátrico faz?",
+          alternativas: [
+               "Expecializado para cuidar da parte auditiva de uma criança",
+               "Expecializado para cuidar de crianças com câncer"
+          ],
+          correta: 1 // A segunda alternativa é a correta
+},
+{
+     enunciado: "A maquiagem pode se usar no corpo além do rosto?",
+     alternativas: [
+          "não",
+          "sim"
+     ],
+     correta: 1 // A segunda alternativa é a correta
+},
+{
+     enunciado: "Qual o oceano que divide o Brasil?" ,
+     alternativas:[
+          "Oceano Atlântico" ,
+          "Oceano Pacífico"
+     ],
+     correta: 0 // A primeira alternativa é a correta
+},
+{
+     enunciado: "Normalmente, quantos litros de sangue uma pessoa tem?",
+     alternativas: [
+          "Tem de 2 a 4 litros",
+          "Tem de 4 a 6 litros"
+     ],
+     correta: 1 // A segunda alternativa é a correta
+},
+{
+     enunciado: "De onde é a invenção do chuveiro elétrico?",
+     alternativas: [
+          "Brasil",
+          "França"
+     ],
+     correta: 0 // A primeira alternativa é a correta
+}
 ];
 
 let atual = 0;
